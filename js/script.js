@@ -1,25 +1,23 @@
-"use strict";
+"use stict";
 
-console.log ('arr' + ' -object ');
-console.log (4 + 9);
+let numberOfFilms;
+numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+console.log (numberOfFilms);
 
-let incr = 10,
-    decr = 10;
+let personalMovieDB = {
+    conunt: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// ++incr;
-// --decr;
+let a = prompt ('Один из последних фильмов?', ''),
+    b = prompt ('Насколько вы его оцените?', ''),
+    c = prompt ('Один из последних фильмов?', ''),
+    d = prompt ('Насколько вы его оцените?', '');
 
-console.log (++incr);
-console.log (--decr);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log (5%2);
-
-console.log (2 + 2 * 2 !== "6");
-
-
-
-const isChecked = false,
-      isClose = false;
-
-console.log (isChecked || !isClose);
-
+console.log (personalMovieDB);
